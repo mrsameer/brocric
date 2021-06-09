@@ -17,7 +17,7 @@ jobs:
       - name: Install Dependencies
         run: yarn
       - name: Build
-        run: yarn build
+        run: yarn build && yarn export
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
